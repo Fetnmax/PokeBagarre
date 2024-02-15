@@ -2,6 +2,7 @@ package com.montaury.pokebagarre.metier;
 
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PokemonTest {
@@ -15,7 +16,8 @@ class PokemonTest {
         boolean resultat = premierPokemon.estVainqueurContre(deuxiemePokemon);
 
         // Then
-        assertTrue(resultat);
+        //assertTrue(resultat);
+        assertThat(resultat).isTrue();
     }
 
     @Test
@@ -28,7 +30,8 @@ class PokemonTest {
         boolean resultat = premierPokemon.estVainqueurContre(deuxiemePokemon);
 
         // Then
-        assertFalse(resultat);
+        //assertFalse(resultat);
+        assertThat(resultat).isFalse();
     }
 
     @Test
@@ -41,7 +44,8 @@ class PokemonTest {
         boolean resultat = premierPokemon.estVainqueurContre(deuxiemePokemon);
 
         // Then
-        assertTrue(resultat);
+        //assertTrue(resultat);
+        assertThat(resultat).isTrue();
     }
 
     @Test
@@ -54,7 +58,8 @@ class PokemonTest {
         boolean resultat = premierPokemon.estVainqueurContre(deuxiemePokemon);
 
         // Then
-        assertFalse(resultat);
+        //assertFalse(resultat);
+        assertThat(resultat).isFalse();
     }
 
     @Test
@@ -67,6 +72,7 @@ class PokemonTest {
         boolean resultat = premierPokemon.estVainqueurContre(deuxiemePokemon);
 
         // Then
-        assertTrue(resultat);
+        //assertTrue(resultat);
+        assertThat(resultat).isTrue();
     }
 }
